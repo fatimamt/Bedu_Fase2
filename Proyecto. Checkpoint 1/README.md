@@ -25,7 +25,7 @@ Así, nuestra hipótesis se dirigió a:
 ## Contenido
 Ésta carpeta incluye el desarrollo de nuestro análisis, empezando con el data set orginal filtrado con las columnas de nuestro interés, el scipt en R en el que desarrollamos el análisis de los datos y correlación de las variables `new_cases` y `people_vacunated`. Además, incluímos el script con una app en Shiny en la que quisimos representar gráficamente el comportamineto de las variables ya mencionadas de una manera más dinámica.
 
-**\*DISCLAIMER:\***
+**\*DISCLAIMER\***
 
 Los resultados mostrados en el analísis en R y la app en Shiny pueden mostrarse diferente debido a las fechas en las que se obtuvieron los datos para cada script.
 
