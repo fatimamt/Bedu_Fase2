@@ -27,7 +27,7 @@ Así, nuestra hipótesis se dirigió a:
 
 **\*DISCLAIMER:\***
 
-Los datos mostrados en el analísis en R y la app en Shiny pueden mostrarse diferente a la fechas en las que se obtuvieron los datos para cada script.
+Los resultados mostrados en el analísis en R y la app en Shiny pueden mostrarse diferente debido a las fechas en las que se obtuvieron los datos para cada script.
 
 ## Resultados
 * [Video de explicación]()
