@@ -2,7 +2,7 @@
 
 __Equipo 8:__
 - Miriam Mayela Alcocer Anaya
-- Ana Silvia Escalante
+- Ana Silvia Escalante Herrera
 - Fatima Martínez Torres
 - Yael Isaac Ramírez Méndez
 
@@ -30,5 +30,5 @@ Así, nuestra hipótesis se dirigió a:
 Los resultados mostrados en el analísis en R y la app en Shiny pueden mostrarse diferente debido a las fechas en las que se obtuvieron los datos para cada script.
 
 ## Resultados
-* [Video de explicación]()
+* [Video de explicación](https://drive.google.com/file/d/1eL9ZsfwvJ1K95AXw0-0cHeY2is5fSXxn/view?usp=sharing)
 * [Dashboard en Shiny](https://yaelrmz.shinyapps.io/proyecto/)
