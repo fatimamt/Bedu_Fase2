@@ -31,4 +31,4 @@ Los resultados mostrados en el analísis en R y la app en Shiny pueden mostrarse
 
 ## Resultados
 * [Video de explicación]()
-* [Dashboard en Shiny]()
+* [Dashboard en Shiny](https://yaelrmz.shinyapps.io/proyecto/)
