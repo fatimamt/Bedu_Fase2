@@ -12,16 +12,23 @@ library(dplyr)
 library(e1071)
 library(ggplot2)
 library(caTools)
+library(scales)
+
+#Seleccion del directorio actual
+dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(dir)
 
 # Importación del data set ya filtrado con columnas necesarias
 dataCovid <- read.csv(file = "owid-covid-data.csv")
+dataCovid <- read.csv("https://covid.ourworldindata.org/data/owid-covid-data.csv")
+dataCovid <- dataCovid %>% select(location, date, new_cases, people_vaccinated, population)
 
 # Filtración para obtener registros de países que ya tengan vacunas
 dataCovidFilter <- dataCovid %>% filter(total_vaccinations > 0)
 dataCovidFilter <- dataCovidFilter %>% filter(location != "World")
 
 # Date format
-dataCovidFilter$date = as.Date(dataCovidFilter$date, format = "%d/%m/%Y")
+dataCovidFilter$date = as.Date(dataCovidFilter$date, format = "%Y-%m-%d")
 
 # Visualización de todos los países
 jpeg(filename = "vacunados_mundo.jpg", width = 1300, height = 730, quality = 100, res = 125)
@@ -53,7 +60,6 @@ dev.off()
 # Ordenación de datos para obtener el TOP 10 de países con más personas vacunadas
 orderedDataCovid <- dataCovidFilter[order(dataCovidFilter$people_vaccinated, decreasing = TRUE),]
 dataCovidUnique <- orderedDataCovid[match(unique(orderedDataCovid$location), orderedDataCovid$location),]
-#orderedDataCovid <- dataCovidUnique[order(dataCovidUnique$people_vaccinated, decreasing = TRUE),]
 topDataCovidUnique <- dataCovidUnique[1:10,]
 topDataCovid <- dataCovidFilter %>% filter(location %in% topDataCovidUnique$location)
 
@@ -85,6 +91,9 @@ topDataCovid %>%
 
 dev.off()
 
+#Guardado de datos para Shiny 
+write.csv(orderedDataCovid, file = "dataCovid.csv")
+
 # Porcentaje poblacional
 dataCovidFilter$porcentaje_vacunado <- dataCovidFilter$people_vaccinated * 100/dataCovidFilter$population
 
@@ -106,7 +115,6 @@ dev.off()
 # Ordenación de datos para obtener el TOP 10 de países con mayor porcentaje de personas vacunadas
 orderedDataCovidPorcentaje <- dataCovidFilter[order(dataCovidFilter$porcentaje_vacunado, decreasing = TRUE),]
 dataCovidUniquePorcentaje <- orderedDataCovidPorcentaje[match(unique(orderedDataCovidPorcentaje$location), orderedDataCovidPorcentaje$location),]
-#orderedDataCovid <- dataCovidUnique[order(dataCovidUnique$people_vaccinated, decreasing = TRUE),]
 topDataCovidUniquePorcentaje <- dataCovidUniquePorcentaje[1:10,]
 topDataCovidPorcentaje <- dataCovidFilter %>% filter(location %in% topDataCovidUniquePorcentaje$location)
 
@@ -230,7 +238,7 @@ correlacion2 <- cor(people_vaccinated, new_cases)
 
 # Prueba con un modelo de regresión lineal
 modelo2 <- lm(new_cases ~ people_vaccinated)
-summary(modelo) # p-value importante, pero R^2 mínima
+summary(modelo2) # p-value importante, pero R^2 mínima
 
 # Visualización
 
