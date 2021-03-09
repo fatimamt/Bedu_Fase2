@@ -1,3 +1,5 @@
+# Postwork 1. Evidencia
+
 El virus causante del COVID-19 empezó sus primeros registros en la OMS el 31 de diciembre de 2019 al detectar en la provincia de Hubei, China, una anomalía de neumonía en un grupo de personas considerable. Sin embargo, el 9 de enero de 2020, la Organización Mundial de Salud informó a las autoridades de país que dicho brote era garcias a una nueva especie de coronavirus, por lo que se empezó a convocar a expertos a nivel mundial, para un mejor análisis del caso.
 
 Desde entonces, el virus se fue esparciendo a gran velocidad ya que, en tan solo 13 días, se registró el primer caso fuera del país asiático de origen. Se empezaron a presentar problemas en la investigación de éste nuevo virus, hasta el punto de aplazar 10 días más la investigación inicial, la cual debió estar preparada para el 23 de enero del 2020. La gravedad del virus no se había confirmado para entonces.
