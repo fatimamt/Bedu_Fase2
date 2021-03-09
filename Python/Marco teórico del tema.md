@@ -20,6 +20,6 @@ Avances que dieron luz al final del tunel, fue la validación de la primera vacu
 
 Fuentes:
 - [COVID-19: Cronología de la actuación de la OMS](https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/donate)
-- [Cronología de la respuesta de la OMS a la COVID-19‎](https://www.who.int/es/news/item/29-06-2020-covidtimeline)
-- [Primer caso de COVID-19 en México)[https://www.jornada.com.mx/notas/2021/02/26/politica/hoy-se-cumple-un-ano-del-primer-caso-de-covid-19-en-mexico/]
+- [Cronología de la respuesta de la OMS a la COVID-19](https://www.who.int/es/news/item/29-06-2020-covidtimeline)
+- [Primer caso de COVID-19 en México](https://www.jornada.com.mx/notas/2021/02/26/politica/hoy-se-cumple-un-ano-del-primer-caso-de-covid-19-en-mexico/)
 - [Hoja Información para Receptores y Provedores de Cuidado](https://www.fda.gov/media/144625/download)
