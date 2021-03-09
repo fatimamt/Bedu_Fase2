@@ -1,0 +1,11 @@
+# Postwork 3. Evidencia
+
+Algunas de las preguntas se buscan ir respondiendo en el desarrollo del EDA usando el lenguaje de programación de Python.
+
+Para la obtención de los datos, decidimos acceder al repositorio alojado [aquí](https://github.com/owid/covid-19-data/tree/master/public/data), el cual lo provee la plataforma de [Our World in Data](https://ourworldindata.org/coronavirus). Entre las razones por las que decidimos trabajr co dicho dataset están que cumple con responder nuestras interrogantes, es un data set de acceso es gratuito, y,  de manera más importante, proporciona información actualizada y completa.
+
+Entre nuestro repertorio de datasets a elegir se enconraron los siguientes:
+- [COVID-19 World Vaccination Progress](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)
+- [COVID-19 World Vaccination Progress Data](https://www.kaggle.com/fedesoriano/coronavirus-covid19-vaccinations-data)
+- [COVID-19 World Vaccine Adverse Reactions](https://www.kaggle.com/ayushggarg/covid19-vaccine-adverse-reactions)
+- [Covid-19 Vaccinations](https://www.kaggle.com/mpwolke/cusersmarilonedriveimagensvaccinationpng)
